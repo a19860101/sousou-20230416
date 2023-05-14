@@ -7,46 +7,43 @@
     <title>Document</title>
     <style>
         .container {
-            width: 1200px;
-            height: 600px;
+            max-width: 1200px;
+            /* height: 600px; */
             background-color: #ccc;
             display: flex;
             flex-wrap: wrap;
             align-items: start;
+
+            flex-direction: row;
+            /* row, column, row-reverse, column-reverse */
         }
         .box {
-            width: 400px;
+            /* width: 100%; */
             /* height: 300px; */
-            /* flex-shrink: 0; */
+            flex-shrink: 0;
+            flex-grow: 0;
+            flex-basis: 33.3333%;
             background-color: #fa0;
         }
+        /* 
+            當flex-direction為row時
+            flex-basis標示 寬度
+            
+            當flex-direction為column時
+            flex-basis標示 高度
+        */
     </style>
 </head>
 <body>
     <div class="container">
         <div class="box">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat dicta ab possimus ut, itaque perferendis ullam tempora ad beatae nulla accusamus rerum earum fugit libero nobis dolorem minus alias temporibus!
+            111Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat dicta ab possimus ut, itaque perferendis ullam tempora ad beatae nulla accusamus rerum earum fugit libero nobis dolorem minus alias temporibus!
         </div>
         <div class="box">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias ex sapiente officia facilis ipsa quo dignissimos eligendi, ipsum fugit aspernatur!
+            222Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias ex sapiente officia facilis ipsa quo dignissimos eligendi, ipsum fugit aspernatur!
         </div>
         <div class="box">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, nulla laborum sit eum magni perferendis ipsam distinctio ratione! Saepe voluptatibus culpa ipsam quam assumenda tempore maiores repudiandae est, mollitia velit blanditiis error eveniet accusantium suscipit rerum sequi! Provident molestias voluptate sed sit doloremque assumenda saepe, reiciendis iure, eius animi quo!
-        </div>
-        <div class="box">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, nulla laborum sit eum magni perferendis ipsam distinctio ratione! Saepe voluptatibus culpa ipsam quam assumenda tempore maiores repudiandae est, mollitia velit blanditiis error eveniet accusantium suscipit rerum sequi! Provident molestias voluptate sed sit doloremque assumenda saepe, reiciendis iure, eius animi quo!
-        </div>
-        <div class="box">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat dicta ab possimus ut, itaque perferendis ullam tempora ad beatae nulla accusamus rerum earum fugit libero nobis dolorem minus alias temporibus!
-        </div>
-        <div class="box">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias ex sapiente officia facilis ipsa quo dignissimos eligendi, ipsum fugit aspernatur!
-        </div>
-        <div class="box">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, nulla laborum sit eum magni perferendis ipsam distinctio ratione! Saepe voluptatibus culpa ipsam quam assumenda tempore maiores repudiandae est, mollitia velit blanditiis error eveniet accusantium suscipit rerum sequi! Provident molestias voluptate sed sit doloremque assumenda saepe, reiciendis iure, eius animi quo!
-        </div>
-        <div class="box">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, nulla laborum sit eum magni perferendis ipsam distinctio ratione! Saepe voluptatibus culpa ipsam quam assumenda tempore maiores repudiandae est, mollitia velit blanditiis error eveniet accusantium suscipit rerum sequi! Provident molestias voluptate sed sit doloremque assumenda saepe, reiciendis iure, eius animi quo!
+            333Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, nulla laborum sit eum magni perferendis ipsam distinctio ratione! Saepe voluptatibus culpa ipsam quam assumenda tempore maiores repudiandae est, mollitia velit blanditiis error eveniet accusantium suscipit rerum sequi! Provident molestias voluptate sed sit doloremque assumenda saepe, reiciendis iure, eius animi quo!
         </div>
     </div>
 </body>
