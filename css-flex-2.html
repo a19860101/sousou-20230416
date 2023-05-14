@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 600px;
+            height: 400px;
+            background-color: #ccc;
+            display: flex;
+            justify-content: start;
+            /* 
+                start, end , center
+                space-around, space-between, space-evenly
+            */
+            align-items: center;
+            /* 
+                start, end, center
+                stretch, baseline
+            */
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #fa0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>text</h1>
+        </div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html>
