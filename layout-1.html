@@ -58,12 +58,17 @@
             text-align: center;
             font-size: 36px;
         }
-        #section-1 {
+        section {
             padding-block: 120px;
         }
-        #section-1 .col{
+        .col-three {
             flex:1 0 400px;
-            padding:15px;
+        }
+        .col-four {
+            flex:1 0 300px;
+        }
+        [class^='col']{
+            padding: 15px;
         }
     </style>
 </head>
@@ -87,22 +92,52 @@
     <section id="section-1">
         <h2 class="section-title">Section 1</h2>
         <div class="container">
-            <div class="col">
+            <div class="col-three">
                 <h2>title</h2>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, delectus magni, eum totam provident quaerat velit culpa distinctio porro facilis aperiam aliquam quisquam error repudiandae sunt voluptate ratione impedit ipsam!z
                 </p>
             </div>
-            <div class="col">
+            <div class="col-three">
                 <h2>title</h2>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, delectus magni, eum totam provident quaerat velit culpa distinctio porro facilis aperiam aliquam quisquam error repudiandae sunt voluptate ratione impedit ipsam!z
                 </p>
             </div>
-            <div class="col">
+            <div class="col-three">
                 <h2>title</h2>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, delectus magni, eum totam provident quaerat velit culpa distinctio porro facilis aperiam aliquam quisquam error repudiandae sunt voluptate ratione impedit ipsam!z
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="section-2">
+        <h2 class="section-title">Section 2</h2>
+
+        <div class="container">
+            <div class="col-four">
+                <h3>title</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, aspernatur!
+                </p>
+            </div>
+            <div class="col-four">
+                <h3>title</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, aspernatur!
+                </p>
+            </div>
+            <div class="col-four">
+                <h3>title</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, aspernatur!
+                </p>
+            </div>
+            <div class="col-four">
+                <h3>title</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, aspernatur!
                 </p>
             </div>
         </div>
