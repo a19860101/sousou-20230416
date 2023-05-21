@@ -28,6 +28,23 @@
             color: #fff;
             padding-inline:10px;
         }
+        header {
+            width: 100%;
+            /* 等高 */
+            height: 600px;
+
+            /* 等比例 */
+            /* aspect-ratio: 2 / 1; */
+            
+            background-color: #098;
+
+
+        }
+        header img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body>
@@ -40,9 +57,12 @@
             <a href="#" class="nav-link">Link</a>
         </div>
         <div class="nav-menu">
-            <a href="#">login</a>
-            <a href="#">register</a>
+            <a href="#" class="nav-link">login</a>
+            <a href="#" class="nav-link">register</a>
         </div>
     </nav>
+    <header>
+        <img src="https://picsum.photos/id/34/1200/600" alt="">
+    </header>
 </body>
 </html>
