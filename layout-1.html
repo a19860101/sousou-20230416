@@ -41,6 +41,8 @@
             
             background-color: #098;
 
+            max-height: 600px;
+
 
         }
         header img {
@@ -67,6 +69,9 @@
         #section-2 {
             background-color: #edfffe;
         }
+        .col-two {
+            flex: 1 1 600px;
+        }
         .col-three {
             flex:1 0 400px;
         }
@@ -76,6 +81,15 @@
         [class^='col']{
             padding: 15px;
         }
+        #section-3 .container {
+            align-items: center;
+        }
+        #section-3 .col-two:nth-of-type(1){order:1;}
+        #section-3 .col-two:nth-of-type(2){order:2;}
+        #section-3 .col-two:nth-of-type(3){order:4;}
+        #section-3 .col-two:nth-of-type(4){order:3;}
+        #section-3 .col-two:nth-of-type(5){order:5;}
+        #section-3 .col-two:nth-of-type(6){order:6;}
     </style>
 </head>
 <body>
@@ -143,6 +157,37 @@
                 <h3>title</h3>
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, aspernatur!
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="section-3">
+        <div class="container">
+            <div class="col-two">
+                <img src="https://picsum.photos/id/87/800/600" alt="">
+            </div>
+            <div class="col-two">
+                <h3>title</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat alias assumenda architecto? Et inventore quidem reprehenderit ut quos asperiores nisi voluptatem ab recusandae natus, explicabo praesentium, maiores amet voluptate illo!
+                </p>
+            </div>
+            <div class="col-two">
+                <img src="https://picsum.photos/id/87/800/600" alt="">
+            </div>
+            <div class="col-two">
+                <h3>title</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat alias assumenda architecto? Et inventore quidem reprehenderit ut quos asperiores nisi voluptatem ab recusandae natus, explicabo praesentium, maiores amet voluptate illo!
+                </p>
+            </div>
+            <div class="col-two">
+                <img src="https://picsum.photos/id/87/800/600" alt="">
+            </div>
+            <div class="col-two">
+                <h3>title</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat alias assumenda architecto? Et inventore quidem reprehenderit ut quos asperiores nisi voluptatem ab recusandae natus, explicabo praesentium, maiores amet voluptate illo!
                 </p>
             </div>
         </div>
